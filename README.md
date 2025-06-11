@@ -24,15 +24,17 @@ python setup.py develop
 
 Installation from scratch typically takes less than 2 hours.
 
-## Training Syllable Decoders
+## Training MIBRAIN
 
-Please see [Getting Started](docs/GETTING_STARTED.md) for the basic usage of OpenBioSeq (based on OpenMixup and MMSelfSup). As an example, you can start a multiple GPUs training with a certain `CONFIG_FILE` using the following script: 
+We give two baseline training configurations regarding both stages of MIBRAIN.
+To run the whole functional network prototyping stage of MIBRAIN, run the following argument:
 ```shell
-bash tools/dist_train.sh ${CONFIG_FILE} ${GPUS} [optional arguments]
+python train.py MIBRAIN_Pretrain_baseline.py
 ```
-Then, please see [tutorials](docs/tutorials) for more tech details (based on MMClassification).
-
-CONFIG_FILE for training prediction models of syllable components (initial, tone, and final) are located in configs/benchmarks/classification
+To run the neural decoding stage of MIBRAIN, run the following argument:
+```shell
+python train.py MIBRAIN_finetune_baseline.py
+```
 
 ## License
 
