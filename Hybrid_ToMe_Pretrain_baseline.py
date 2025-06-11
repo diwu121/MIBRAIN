@@ -39,8 +39,7 @@ train_setting = dict(
     recon_cost = 0.0,
     cls_count = 23,
     data=dict(
-        # data_folder="/root/siton-data-wudiPersonal/DATA/sEEG-Speech/standardized_data_padded_initial/std_padded_data_init_512_sublabel/",
-        data_folder="/root/siton-data-wudiPersonal/DATA/EEG_SPEECH/wc/std_data/initial/",
+        data_folder="/root/siton-data-wudiPersonal/DATA/EEG_SPEECH/all_sub/std_data/initial/",
     ),
     opt_params=dict(
         epochs=10,
@@ -56,7 +55,6 @@ train_setting = dict(
 
 test_setting = dict(
     data=dict(
-    # data_folder="/root/siton-data-wudiPersonal/DATA/sEEG-Speech/standardized_data_padded_initial/std_padded_data_init_512_sublabel/",
-    data_folder="/root/siton-data-wudiPersonal/DATA/EEG_SPEECH/wc/std_data/initial/",
+    data_folder="/root/siton-data-wudiPersonal/DATA/EEG_SPEECH/all_sub/std_data/initial/",
     ),
 )
