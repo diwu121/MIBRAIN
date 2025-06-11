@@ -163,14 +163,10 @@ def add_mim_extension():
 if __name__ == '__main__':
     add_mim_extension()
     setup(
-        name='OpenBioSeq',
+        name='MIBRAIN',
         version=get_version(),
-        description='Open Bio-sequence Toolbox for Supervision and Self-Supervision Learning',
+        description='Towards Unified Neural Decoding with Brain Functional Network Modeling',
         long_description=readme(),
-        author='CAIRI Westlake University Contributors',
-        author_email='lisiyuan@westlake.edu.com',
-        keywords='bio-sequence embedding, supervised and self-supervised learning',
-        url='https://github.com/Westlake-AI/OpenBioSeq',
         packages=find_packages(exclude=('configs', 'tools')),
         classifiers=[
             'Development Status :: 4 - Beta',
